@@ -2,38 +2,63 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the relation between capacitance and input impedance?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "directly proportional",
+        "b": "constant",
+        "c": "proportional to square",
+        "d": "inversely proportional"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the relation between capacitance and output impedance?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "proportional to square",
+        "b": "constant",
+        "c": "directly proportional",
+        "d": "inversely proportional"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Capacitance of a cylindrical capacitor is given by which of the following relation?",
+      "answers": {
+        "a": "C = ∈lln(Rr)",
+        "b": "C = 2πlln(Rr)",
+        "c": "C = 2π∈lln(Rr)",
+        "d": "C = 2π∈ln(Rr)"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+	
+	
+	{
+      "question": "What is the difference among normal capacitor and a Capacitive transducer?",
+      "answers": {
+        "a": "Area",
+        "b": "Intensity",
+        "c": "Distance amid plates",
+        "d": "Both a & b"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "How many plates does a capacitive transducer have?",
+      "answers": {
+        "a": "One",
+        "b": "Two",
+        "c": "Three",
+        "d": "Four"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
+	
   ]
 }
