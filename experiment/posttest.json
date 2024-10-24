@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "How the plates in capacitive transducer are connected?",
+      "question": "Which of the following is a limitation of capacitive sensors?",
       "answers": {
-        "a": "Both are fixed",
-        "b": "One is fixed and other is movable",
-        "c": "Both are movable",
-        "d": "As per requirement"
+        "a": "Insensitivity to environmental factors",
+        "b": "Sensitivity to temperature changes",
+        "c": "Only work with metallic objects",
+        "d": "High cost of manufacturing"
       },
      
       "correctAnswer": "b",
@@ -27,41 +27,41 @@
     },
 	
 	{
-      "question": "How the capacitance is measured in capacitive transducers?",
+      "question": "Which feature of capacitive sensors allows them to detect transparent objects?",
       "answers": {
-        "a": "Ammeter",
-        "b": "Voltmeter",
-        "c": "Bridge circuits",
-        "d": "Thermistor"
+        "a": "Light-reflective surface",
+        "b": "Dielectric property of the material",
+        "c": "Infrared emission",
+        "d": "High-frequency oscillation"
       },
      
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
 	
 	{
-      "question": "The capacitance in Parallel plates will be maximum at _______?",
+      "question": "Which material would cause a greater capacitance change in a capacitive sensor?",
       "answers": {
-        "a": "Overlapped region",
-        "b": "Large distance amid plates",
-        "c": "180 degrees",
-        "d": "a & c"
-      },
-     
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-	
-	{
-      "question": "What happens to the sensitivity when the capacitance vary due to distance amid plates?",
-      "answers": {
-        "a": "Vary",
-        "b": "Constant",
-        "c": "Doesn’t alter",
-        "d": "Can’t determine"
+        "a": "Mica",
+        "b": "Air",
+        "c": "Teflon",
+        "d": "Glass"
       },
      
       "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Capacitive sensors can be used to detect objects through which type of material?",
+      "answers": {
+        "a": "Metal",
+        "b": " Non-conductive materials",
+        "c": "Magnetic materials",
+        "d": "High-reflectivity materials"
+      },
+     
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

@@ -1,1 +1,1 @@
-## Capacitive Transducer
+## Design of capacitive sensors and its applications 

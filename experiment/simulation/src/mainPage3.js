@@ -7,115 +7,37 @@ function mainPage3(){
      $("#selectMethod").prop('disabled',true);
       $("#centerText1").html('LEVEL MEASUREMENT MIMIC');
       $("#centerText2").html('CONFIGURATION');
-//      var htm = '<img src="images/ultrasonic1.gif" class="img-fluid" >'
-//      $("#canvas-div").html(htm);
-      var selection  ='<div class="row"><div class="col-sm-6" >'
-       +'<label class="labelstyle"> Select the Pipe Diameter (inch): </label>'   
-       +'</div>'
-       +'<div class="col-sm-6">'
-	   +'<select  class="form-control selectConf" id="pipeSize"  style="height:auto;">'
-	   +'<option value="0">--- Select the Pipe size --- </option>'
-	   	+'<option value="1" >1</option>'
-	   +'<option value="2">2</option>'
-	   +'<option value="3">3</option>'
-	   +'<option value="4">4</option>'
-	   +'</select>'          
-       +'</div>' 
-       +'</div>'  
-       +'<br>'
-       +'<div class="row">'
-	   
-	   
-	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Select Aagle : </label>'
+  var htm = '<img src="images/capacitor_img0001.png" class="img-fluid" >'
+      $("#canvas-div").html(htm);
+     var selection  ='<div class="row"><div class="col-sm-6" >'
+//	   +'<div class="col-sm-6">'
+	   +'<label class="labelstyle"> Enter Width (mm) : </label>'
 	   +'</div>'
-	   +'<div class="col-sm-6">'
-	   +'<select  class="form-control selectConf" id="angle" " style="height:auto;">'
-	   +'<option value="0">--- Select Angle --- </option>'
-	   +'<option value="1" >15&deg; </option>'
-	   +'<option value="2">20&deg;</option>'
-	    +'<option value="2">25&deg;</option>'
-	     +'<option value="2">30&deg;</option>'
-	   +'</select>'
-	   +'</div>'
-	   +'</div>'
-	   +'<br>'    
-	   +'<div class="row">'
-	   
-	   
-	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Select Flow Rate (m/s) : </label>'
-	   +'</div>'
-	   +'<div class="col-sm-6">'
-	   +'<select  class="form-control selectConf" id="flowRate" " style="height:auto;">'
-	   +'<option value="0">--- Select flowRate --- </option>'
-	   +'<option value="1" >0.1 </option>'
-	   +'<option value="2">2</option>'
-	   +'<option value="3">3</option>'
-	   +'<option value="4">4</option>'
-	   +'<option value="5">5</option>'
-	   +'</select>'
-	   +'</div>'
-	   +'</div>'
-	   +'<br>' 
+	    +'<div class="col-sm-4">'
+		 +'<input type="text" id="wdth" style = margin:15px 10px;width:100%;"  class=" form-control"/>'
+		 +'</div>'
 	   
 	   
 	   
-	   
-	   +'<div class="row" >'
-	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Select Fluid Type : </label>'
-	   +'</div>'
-	   +'<div class="col-sm-6">'
-	   +'<select  class="form-control selectConf" id="fluidType" " style="height:auto;">'
-	   +'<option value="000">--- Select  Speed of Sound --- </option>'
-	   +'<option value="1480" >Water </option>'
-	   +'<option value="343">Air</option>'	   
-	   +'</select>'
-	   +'</div>'
-	   +'</div>'
-	   +'<br>' 
-	    
-	      +'<div class="row" >'
-	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Select Fluid Level : </label>'
-	   +'</div>'
-	   +'<div class="col-sm-6">'
-	   +'<select  class="form-control selectConf" id="fluidLevel" " style="height:auto;">'
-	   +'<option value="000">--- Select  Speed of Sound --- </option>'
-	   +'<option value="1480" >10 </option>'
-	   +'<option value="343">50</option>'
-	   +'<option value="343">100</option>'
-	   +'<option value="343">200</option>'
-	   +'<option value="343">300</option>'
-	   +'<option value="343">400</option>'	   
-	   +'</select>'
-	   +'</div>'
-	   +'</div>'
-	   +'<br>'
-	    
-	    
-	   +'<div class="row" >'
-	    +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Select Distance (m):  </label>'
-	   +'</div>'
-	   +'<div class="col-sm-6" >'
-	   +'<select  class="form-control selectConf" id="distance" " style="height:auto;">'
-	   +'<option value="00">--- Select Distance --- </option>'
-	   +'<option value="10" >1</option>'
-	   +'<option value="15">2</option>'
-	   +'<option value="20">3</option>'
-	   +'<option value="25">4</option>'
-	   +'</select>'
-	   +'</div>'
-	   +'<br>' 
-	   +'<br>' 
-	   +'<br>' 
-	   +'<br>'    
+	  
        +'<div class="col-sm-12" id="buttonDiv">'
-	   +'<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="submitconfig" data-toggle="modal" data-target="#selectCheck" ><b>  CHECK CONFIGURATION </b></button>' 
+	   +'<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="submitwdth" data-toggle="modal" data-target="#selectCheck" ><b>  SUBMIT1</b></button>' 
 	    +'</div>'
 
+    
+    +'<div class="row" id="timeAnswer" hidden>'
+	   +'<div class="col-sm-6">'
+	   +'<label class="labelstyle">Calculate Capacitance in (pF): </label>'
+	   +'</div>'
+		+'<div class="col-sm-3">'
+	+'<input type="text" id="CalTime" style= 10px;width:100%;"  class=" form-control" />'
+	   +'</div>'
+	   +'<div class="col-sm-3">'
+	+'<button type="button"  "  class="btn btn-danger btnStyle" id="checkAsnTime" data-toggle="modal" data-target="#selectCheck" ><b>SUBMIT </b></button>'
+	   +'</div>'
+	    +'</div>'
+	    
+    
     
 	     + ' <!-- Modal -->'
 				+ '<div class="modal fade" id="selectCheck" role="dialog">'
@@ -138,50 +60,91 @@ function mainPage3(){
 				+ '</div>'
 				+ ' </div>'  
 		$("#main-div-conf").html(selection);	
+		
+		
+		id = 1;
+     $("#checkAsnTime").click(function() {
+			 
+				$("body").css("padding","0px 0px 0px 0px");
+			   var flowAns = $("#CalTime").val();
+	
+		
+				if(flowAns==""){
+					
+					$("#modelMsg123").html("<b class='boldTextRed'>Enter numeric value ");
+					
+					
+				}
+				else
+					{
+					if (id <= 3) {
+						if (flowAns == calculateTime.toFixed(3)) {
+//							$("#modelMsg123").html("done ");
+							$("#timeAnswer").prop('hidden',true);
+							id=0;
+							
+							addToMasterJSON1();
+							
+							
+							$("#CalTime").val('');
+							
+						} else if (flowAns != calculateTime.toFixed(3)) {
+					$("#modelMsg123").html("<b class='boldTextRed'>Entered value is incorrect.Try again .</b> ");
+//							
+						
+						}
+
+
+					} else if (id == 4)
+					 {
+						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :Capacitance  = " + unescape('%u2208') + " X Area / Distance</b> ");
+
+						
+					} else {
+						flowAns = $("#CalTime").val();
+//						flow = flowAns.toFixed(2);
+						if (flowAns == calculateTime.toFixed(3)) {
+							
+//							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#timeAnswer").prop('hidden',true);
+							
+							addToMasterJSON1();
+							
+							
+							$("#CalTime").val('');
+							id=0;
+					
+						} else {
+
+							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +calculateTime.toFixed(3)+'</b>');
+						}
+					}
+					id++;
+					}
+					
+//					
+				});
+				
+    
+    
+    
+    
     
 //    var pipeSizeSelect,angleSelect,flowRateSelect,fluidSelect,distSelect;
     
-     $("#submitconfig").click(function() {
-	 pipeSizeSelect=$("#pipeSize").val();
-		   angleSelect=$("#angle").val();
-		   flowRateSelect=$("#flowRate").val();
-			fluidSelect=$("#fluidType").val();
-			fluidLevelSelect=$("#fluidLevel").val();
-			distSelect=$("#distance").val();
+     $("#submitwdth").click(function() {
+	
+			distSelect = $("#wdth").val();
 			
 				
 //				dataJson.pipe = pipeSize ;
 //				dataJson.fluid = fluidType;
 //				dataJson.material = floatMaterial;
-		   console.log("main pipeSize  =  "+ pipeSizeSelect);
-		   console.log("angle =   "+angleSelect);
-		   console.log("flow_Rate =   "+flowRateSelect);
-		    console.log("fluid =   "+fluidSelect);
-		    		    console.log("fluidLevel =   "+fluidLevelSelect);
+		
 		     console.log("distance =   "+distSelect);
 		   
 		   
-		   if(pipeSizeSelect==0){
-		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Select Pipe Size </b>");
-
-	}else if(angleSelect==0){
-		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Select Angle </b>");
-
-	}else if(flowRateSelect==0){
-		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Select Flow Rate </b>");
-
-	}else if(fluidSelect==0){
-		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Select Fluid </b>");
-
-	}else if(fluidLevelSelect==0){
-		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Select Fluid Level</b>");
-
-	}else if(distSelect==0){
+	 if(distSelect == 0){
 		$("#errorPanel").prop("hidden",false);
 		$("#modelMsg123").html("<b class='boldTextRed'>Select Distance </b>");
 	}else{
@@ -195,10 +158,8 @@ function mainPage3(){
 	
 		   
 		  $("#canvas-div").html("");
-		   
-		   lmimic(pipeSizeSelect,angleSelect,flowRateSelect,fluidSelect,distSelect);
-//	$("#buttonDiv").html('<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="submitAnimationConfig" data-toggle="modal" data-target="#selectCheck" disabled><b>  ANIMATION </b></button>');
-//
+		  
+		 mimic();
 	
 	}	
 

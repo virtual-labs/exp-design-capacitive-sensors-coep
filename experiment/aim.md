@@ -1,8 +1,8 @@
-Title: Capacitance sensor and its application
-Aim: Understand operation of capacitance sensor
-Objectives:
-1)	Understand operation of capacitance sensor.
-2)	Configure  sensor parameters like length, width and distance. 
-3)	Observe capacitance sensor output voltage for change in common area.
-4)	Observe capacitance sensor output voltage for change in displacement.
-5)	Observe capacitance sensor output for angular displacement
+
+### Aim: Design of Capacitive Sensor and Use for Thickness Measurement Application.
+
+###Objectives:
+-	Understand working of capacitance sensor
+-	Configure capacitance sensor parameters like length, width and thickness
+-	Observe capacitance sensor output  for change in thickness
+-  Use capacitance sensor for thickness measurment of sample sheet
