@@ -31,7 +31,7 @@ function mainPage2(){
         
         +'<div class="row">'
 	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Voltage : </label>'
+	   +'<label class="labelstyle"> Excitation Voltage (volt) : </label>'
 	   +'</div>'
 	   +'<div class="col-sm-6">'
 	   +'<select  class="form-control selectConf" id="volt" " style="height:auto;">'
