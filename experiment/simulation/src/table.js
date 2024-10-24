@@ -37,7 +37,7 @@ function tableCreate(masterJson)
 					 + '  </table>'
 					 + ' </div>'
 					
-					 if(tableReading >= 0)
+					 if(tableReading >= 2)
 					 {
 //						tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="nextLevel"  ><b>NEXT LEVEL </b></button></div>'
 						
