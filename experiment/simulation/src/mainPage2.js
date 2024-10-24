@@ -45,7 +45,7 @@ function mainPage2(){
 	   +'<br>'
 	   
        +'<div class="col-sm-12" id="buttonDiv">'
-	   +'<button type="button" style="padding: 8px; "  class="btn btn-danger btnStyle" id="submit" data-toggle="modal" data-target="#selectCheck" ><b>  SUBMIT</b></button>' 
+	   +'<button type="button" style="padding: 8px; "  class="btn btn-danger btnStyle" id="submit"  ><b>  SUBMIT</b></button>' 
 	    +'</div>'
 		+'<br>'
 		+'<br>'
