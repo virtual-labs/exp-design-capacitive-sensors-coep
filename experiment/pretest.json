@@ -2,61 +2,61 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is the relation between capacitance and input impedance?",
+      "question": "Which of the following quantities affects the capacitance in a capacitive sensor?",
       "answers": {
-        "a": "directly proportional",
-        "b": "constant",
-        "c": "proportional to square",
-        "d": "inversely proportional"
+        "a": "Resistance",
+        "b": " Frequency",
+        "c": "Dielectric constant",
+        "d": "Voltage"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "What is the relation between capacitance and output impedance?",
+      "question": "Capacitive sensors are most suitable for detecting objects with high",
       "answers": {
-        "a": "proportional to square",
-        "b": "constant",
-        "c": "directly proportional",
-        "d": "inversely proportional"
+        "a": "Conductivity",
+        "b": " Magnetic properties",
+        "c": "Reflectivity",
+        "d": "Permittivity"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "Capacitance of a cylindrical capacitor is given by which of the following relation?",
+      "question": "What type of energy do capacitive sensors primarily interact with?",
       "answers": {
-        "a": "C = ∈lln(Rr)",
-        "b": "C = 2πlln(Rr)",
-        "c": "C = 2π∈lln(Rr)",
-        "d": "C = 2π∈ln(Rr)"
+        "a": "Electrical energy",
+        "b": "Magnetic energy",
+        "c": " Thermal energy",
+        "d": " Optical energy"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
 	
 	
 	{
-      "question": "What is the difference among normal capacitor and a Capacitive transducer?",
+      "question": "Which of the following components is crucial for a capacitive sensor?",
       "answers": {
-        "a": "Area",
-        "b": "Intensity",
-        "c": "Distance amid plates",
-        "d": "Both a & b"
+        "a": "Inductor",
+        "b": "Resistor",
+        "c": " Capacitor",
+        "d": " Transformer"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
 	
 	{
-      "question": "How many plates does a capacitive transducer have?",
+      "question": "Capacitive sensors are commonly used for",
       "answers": {
-        "a": "One",
-        "b": "Two",
-        "c": "Three",
-        "d": "Four"
+        "a": "Thickness measurement",
+        "b": "Density measurement",
+        "c": "Pressure measurement",
+        "d": "Temperature control"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
 	

@@ -13,9 +13,9 @@ function tableCreate(masterJson)
 					+ '  <tr style = "BACKGROUND-COLOR: #072647; color:#fff; ">'
 					+ '  <tr>'
 					+ '  <th><center>Sr.No</center></th>'
-					+ '  <th scope="col"><center>Area (cm<sup>2</sup>)</center></th>'
+					+ '  <th scope="col"><center>Area (mm<sup>2</sup>)</center></th>'
 //					+ '   <th scope="col"><center >Distance (cm)</center></th>'
-					+ '  <th scope="col"><center>length (cm)</center></th>'
+					+ '  <th scope="col"><center>Distance (mm)</center></th>'
 //					+ '  <th scope="col"><center>distPath</center></th>'
 //					+ '  <th scope="col"><center>speed</center></th>'
 					+ '  <th scope="col"><center>Calculated Capacitance (pf)</center></th>'
@@ -27,7 +27,7 @@ function tableCreate(masterJson)
 					            +'<td>'+p+'</td>'
 								+'   <td><center style="color:red;">' + masterJson.demo[i].area1+ '</center></td>'
 //								+' <td><center style="color:red;">' + masterJson.demo[i].distanceInput + '</center></td>'
-								+ ' <td><center>' + masterJson.demo[i].speedOFsound + '</center></td>'
+								+ ' <td><center>' + masterJson.demo[i].distanceInput + '</center></td>'
 //						        + '<td><center>' + masterJson.demo[i].distPath + '</center></td>'
 //						        + ' <td><center>' + masterJson.demo[i].speed + '</center></td>'
 						        + '<td><center>' + masterJson.demo[i].calculateTime + '</center></td>'
@@ -37,13 +37,14 @@ function tableCreate(masterJson)
 					 + '  </table>'
 					 + ' </div>'
 					
-					 if(tableReading==4)
+					 if(tableReading >= 0)
 					 {
 //						tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="nextLevel"  ><b>NEXT LEVEL </b></button></div>'
-						alert("Congratulations.Sucessfully Completed");
+						
 //						$("#main-div-conf").html('');
 //						$("#canvas-div").html('');
-					
+						$("#next").prop('hidden',false);
+						
 					}
 					
 					$("#tableDesign").html(tableMainDiv);
@@ -57,9 +58,11 @@ function tableCreate(masterJson)
 						$("#fluidType").prop('disabled',true);	
 						$("#nextLevel").prop('disabled',true);
 						$("#main-div-conf").html('');
-						$("#canvas-div").html('');	
+						$("#canvas-div").html('');
+						$("#errorPanel").prop("hidden",true);
+						$("#selectCheck").prop("disabled",true);	
 						
-//						graph(masterJson);	
+								mainPage2();
 					});
 					$("#selectMethod").change(function() {
 						methodType=$("#methodType").val();
@@ -85,8 +88,8 @@ function tableCreate(masterJson)
 				
 
 
-//Flow MEASUREMENT
-function tableCreateFlow()		
+//application table
+function tableCreateApp()		
 {
 			console.log(TimeMasterJson);
 			var tableMainDiv='<div class="col-sm-12">'
@@ -100,24 +103,24 @@ function tableCreateFlow()
 					+ '  <tr style = "BACKGROUND-COLOR: #072647; color:#fff; ">'
 					+ '  <tr>'
 					+ '  <th><center>Sr.No</center></th>'
-					+ '  <th scope="col"><center>Frequency (Hz)</center></th>'
-					+ '   <th scope="col"><center >Distance (cm)</center></th>'
-					+ '  <th scope="col"><center>Speed of Sound (m/s)</center></th>'
+					+ '  <th scope="col"><center>Material</center></th>'
+					+ '   <th scope="col"><center >Sensitivity (mm/Volt)</center></th>'
+					+ '  <th scope="col"><center>Thickness (mm)</center></th>'
 //					+ '  <th scope="col"><center>distPath</center></th>'
 //					+ '  <th scope="col"><center>speed</center></th>'
-					+ '  <th scope="col"><center>Calculated Time (sec)</center></th>'
+//					+ '  <th scope="col"><center>Calculated Time (sec)</center></th>'
 					+ '   </tr>'
 					+ '  </thead>'
 					+ '   <tbody>'
-				for (var i = 0,p=1; i < TimeMasterJson.demo.length; i++,p++) {
+				for (var i = 0,p=1; i < TimeMasterJson.app.length; i++,p++) {
 					tableMainDiv += '<tr>'
 					            +'<td>'+p+'</td>'
-								+'   <td><center style="color:red;">' + TimeMasterJson.demo[i].frequency + '</center></td>'
-								+' <td><center style="color:red;">' + TimeMasterJson.demo[i].distanceInput + '</center></td>'
-								+ ' <td><center>' + TimeMasterJson.demo[i].speedOFsound + '</center></td>'
+								+'   <td><center style="color:red;">' + TimeMasterJson.app[i].material + '</center></td>'
+								+' <td><center style="color:red;">' + TimeMasterJson.app[i].sensitivty + '</center></td>'
+								+ ' <td><center>' + TimeMasterJson.app[i].thickness + '</center></td>'
 //						        + '<td><center>' + masterJson.demo[i].distPath + '</center></td>'
 //						        + ' <td><center>' + masterJson.demo[i].speed + '</center></td>'
-						        + '<td><center>' + TimeMasterJson.demo[i].calculateTime + '</center></td>'
+//						        + '<td><center>' + TimeMasterJson.demo[i].calculateTime + '</center></td>'
 						        + ' </tr>'
 				}
 				tableMainDiv += ' </tbody>'
@@ -158,9 +161,9 @@ function tableCreateFlow()
 
 	
 //Level MEASUREMENT
-function tableCreateLevel(masterJson)		
+function tableCreateLevel(masterJson1)		
 {
-			console.log(masterJson);
+			console.log(masterJson1);
 			var tableMainDiv='<div class="col-sm-12">'
 //					+ '<div class=" well well-lg">'
 ////					+'<center class="blink"> TAKE ALL '+applicationName+' READINGS. </center>'
@@ -172,38 +175,38 @@ function tableCreateLevel(masterJson)
 					+ '  <tr style = "BACKGROUND-COLOR: #072647; color:#fff; ">'
 					+ '  <tr>'
 					+ '  <th><center>Sr.No</center></th>'
-					+ '  <th scope="col"><center>Frequency (Hz)</center></th>'
+					+ '  <th scope="col"><center>Area (cm<sup>2</sup>)</center></th>'
 					+ '   <th scope="col"><center >Distance (cm)</center></th>'
-					+ '  <th scope="col"><center>Speed of Sound (m/s)</center></th>'
+					+ '  <th scope="col"><center>Capacitance (pf)</center></th>'
 //					+ '  <th scope="col"><center>distPath</center></th>'
 //					+ '  <th scope="col"><center>speed</center></th>'
-					+ '  <th scope="col"><center>Calculated Time (sec)</center></th>'
+//					+ '  <th scope="col"><center>Calculated Time (sec)</center></th>'
 					+ '   </tr>'
 					+ '  </thead>'
 					+ '   <tbody>'
-				for (var i = 0,p=1; i < masterJson.demo.length; i++,p++) {
+				for (var i = 0,p=1; i < masterJson1.demo.length; i++,p++) {
 					tableMainDiv += '<tr>'
 					            +'<td>'+p+'</td>'
-								+'   <td><center style="color:red;">' + masterJson.demo[i].frequency + '</center></td>'
-								+' <td><center style="color:red;">' + masterJson.demo[i].distanceInput + '</center></td>'
-								+ ' <td><center>' + masterJson.demo[i].speedOFsound + '</center></td>'
+								+'   <td><center style="color:red;">' + masterJson1.demo[i].area1 + '</center></td>'
+								+' <td><center style="color:red;">' + masterJson1.demo[i].distanceInput + '</center></td>'
+//								+ ' <td><center>' + masterJson1.demo[i].speedOFsound + '</center></td>'
 //						        + '<td><center>' + masterJson.demo[i].distPath + '</center></td>'
 //						        + ' <td><center>' + masterJson.demo[i].speed + '</center></td>'
-						        + '<td><center>' + masterJson.demo[i].calculateTime + '</center></td>'
+						        + '<td><center>' + masterJson1.demo[i].calculateTime + '</center></td>'
 						        + ' </tr>'
 				}
 				tableMainDiv += ' </tbody>'
 					 + '  </table>'
 					 + ' </div>'
 					
-					 if(tableReading==4)
-					 {
-						tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="nextLevel"  ><b>NEXT LEVEL </b></button></div>'
-					}
+//					 if(tableReading==4)
+//					 {
+//						tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="nextLevel"  ><b>NEXT LEVEL </b></button></div>'
+//					}
 					
 					$("#tableDesign").html(tableMainDiv);
-					 tableReading++;
-					 console.log("tableReading "+tableReading);
+//					 tableReading++;
+				
 					$("#nextLevel").click(function() {
 						$("#selectMethod").prop('hidden',false);
 						$("#submitconfig").prop('disabled',true);

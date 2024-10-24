@@ -45,19 +45,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Capacitance can be varied in ________",
+					"QC": "In touch screen applications, capacitive sensors detect",
 					"ANS": [{
 						"ANSID": true,
-						"content": "4 ways"
+						"content": "The capacitance change due to the finger"
 					}, {
 						"ANSID": false,
-						"content": "10 ways"
+						"content": "The heat from the finger"
 					}, {
 						"ANSID": false,
-						"content": "6 ways"
+						"content": "The color of the touch"
 					}, {
 						"ANSID": false,
-						"content": "2 ways"
+						"content": "The pressure applied by the finger"
 					}]
 					
 				}]
@@ -85,19 +85,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Frequency response of capacitive transducers is ________",
+					"QC": "What type of material is typically detected by capacitive sensors?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "High"
+						"content": "Only metallic objects"
 					}, {
 						"ANSID": false,
-						"content": "medium"
+						"content": "Only non-metallic objects"
 					}, {
 						"ANSID": true,
-						"content": "low"
+						"content": "Both metallic and non-metallic objects"
 					}, {
 						"ANSID": false,
-						"content": "zero"
+						"content": "Only magnetic objects"
 					}]
 					
 				}]
@@ -105,19 +105,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Composite capacitance consists of _________",
+					"QC": "In touch screen applications, capacitive sensors detect",
 					"ANS": [{
 						"ANSID": false,
-						"content": "one dielectric medium"
+						"content": "The pressure applied by the finger"
 					}, {
 						"ANSID": true,
-						"content": "more than one dielectric medium"
+						"content": "The capacitance change due to the finger"
 					}, {
 						"ANSID": false,
-						"content": "five dielectric medium"
+						"content": "The heat from the finger"
 					}, {
 						"ANSID": false,
-						"content": "ten dielectric medium"
+						"content": "The color of the touch"
 					}]
 					
 				}]

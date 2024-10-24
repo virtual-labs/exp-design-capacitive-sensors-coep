@@ -20,7 +20,7 @@
   padding: 10px;
   border: 1px solid #aaaaaa;
 }
-#timeAnswer,#freqAnswer,#convertFreq,#freqAnswer
+#timeAnswer,#freqAnswer,#convertFreq,#freqAnswer,#sensitivity,#thick
 {
 			background-color: #31717b;
 			color:#fff;
@@ -31,6 +31,15 @@
 	background-image: url("images/b1.jpg");
 	 background-color: #cccccc;
 }
+
+/* #movebtn,#movebtn1{ */
+/*  position: absolute; */
+/*             top: 0; */
+/*             right: 0; */
+/*             padding: 10px; */
+/*             background-color: green; */
+/*             color: #fff; */
+/* } */
  
 .QueHead{font-size: 18px;
       font-size: 22px;
