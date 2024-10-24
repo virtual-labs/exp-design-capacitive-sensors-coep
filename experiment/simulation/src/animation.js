@@ -57,9 +57,26 @@ function animation() {
 	console.log("width -"+width1);
 	console.log("length -"+length);
 	console.log("area" + area);
-	capacitance = (8.852 * Math.pow(10, -12)) * (area* Math.pow(10, -6) )/ (distance* Math.pow(10, -3));
+	constant = 0;
+	matName = '';
+	if (material == 1){
+		constant = 8;
+		matName = "Mica";
+	}else if (material == 2){
+		constant = 5;
+		matName = "Glass";
+	}else if (material == 3){
+		constant = 2.1;
+		matName = "Teflon";
+	}
+	
+	//* Math.pow(10, -12)
+	capacitance = (constant ) * (area* Math.pow(10, -6) )/ (distance* Math.pow(10, -3));
 	//	console.log("area capata"+capacitance);
-	calculateTime = capacitance / Math.pow(10, -12);
+	capacitance1 = ((constant ) * (area* Math.pow(10, -4) )/ (distance* Math.pow(10, -3))).toFixed(3);
+	console.log(capacitance1);
+	calculateTime = parseFloat(capacitance1);
+//	calculateTime = capacitance / Math.pow(10, -12);
 	var plate ;
 	var plae_line;
 
@@ -73,9 +90,9 @@ function animation() {
 	}
 
 
-	var USworking = paper.image("images/capacitor_img0001.png", (x+140), (y+10),430, 380);
+	var USworking = paper.image("images/capacitivesensor1.jpg", (x+140), (y+10),430, 380);
 	distText = paper.text((x + 200), (y + 440), "Distance ( " + distance + " mm )").attr({ 'font-size': 25, 'stroke': '#800000' });
-	distText1 = paper.text((x + 400), (y + 440), "Material is Air").attr({ 'font-size': 25, 'stroke': '#800000' });
+	distText1 = paper.text((x + 400), (y + 440), "Material is "+matName).attr({ 'font-size': 25, 'stroke': '#800000' });
 
 	function plate_fix(x, y) {
 		paper.path("M " + (x) + " " + (y + 100) + "l 0  200 l 100 -80 l 0 -200 l -103 80").attr({ 'stroke-width': 12, 'stroke': 'black', 'fill': 'grey' });
@@ -147,7 +164,7 @@ function animation() {
 	 decrement(x, y);
  }
 }
-
+capacorrt = 0;
 function addToMasterJSON() {
 	clear();
 	tempJson = {};

@@ -35,7 +35,8 @@ The capacitive transducer is mainly used for measurement of linear displacement.
 3.	The capacitance changes because of dielectric constant.
 The following methods are used for the measuring displacement.
 
-# 1.The transducer using the change in distance between the plates 
+### 1.The transducer using the change in distance between the plates 
+
  The capacitance of the transducer is inversely proportional to the distance between the plates. The one plate of the transducer is fixed, and the other is movable. The displacement which is to be measured links to the movable plates.
  
  ![4](images/figure4(1).png)
@@ -47,7 +48,7 @@ The capacitance is inversely proportional to the distance because of which the c
 
 The sensitivity of the transducer is not constant and vary from places to places
 
-# 2. A transducer using the change in the Area of Plates 
+### 2. A transducer using the change in the Area of Plates 
 The equation below shows that the capacitance is directly proportional to the area of the plates. The capacitance changes correspondingly with the change in the position of the plates.
 
 ![6](images/figure6(1).jpg)

@@ -1,5 +1,5 @@
 var ArrayJson=[];
-
+appli = {};
 function mainPage2(){
 	console.log("MAIN PAGE 2");
 	$("#main-div-conf").html('');	
@@ -8,86 +8,75 @@ function mainPage2(){
       $("#selectMethod").prop('disabled',true);
       $("#centerText1").html('Capacitive Sensor');
       $("#centerText2").html('CONFIGURATION');
-      var htm = '<img src="images/capacitor_img0001.png" class="img-fluid" >'
-      $("#canvas-div").html(htm);
+//      var htm = '<img src="images/capacitor_img0001.png" class="img-fluid" >'
+      $("#canvas-div").html();
       console.log("len max"+lengthmax);
-      
-//   $("#frequency").prop('disabled',true);
-
-//       var selection  ='<div class="row"><div class="col-sm-6" >'
-//       +'<label class="labelstyle"> Select Width of Plate (mm) : </label>'   
-//       +'</div>'
-//       +'<div class="col-sm-6">'
-//	   +'<select  class="form-control selectConf" id="frequency"  style="height:auto;">'
-//	   +'<option value="0">--- Select Width --- </option>'
-//	   +'<option value="1">1</option>'
-//	   +'<option value="10">10</option>'
-//	   +'<option value="100">100</option>'
-//	   +'<option value="200">200</option>'
-//	   +'<option value="300">300</option>'
-//	   +'<option value="400">400</option>'
-//	   +'<option value="500">500</option>'
-//	   +'<option value="600">600</option>'
-//	   +'<option value="700">700</option>'
-//	   +'<option value="800">800</option>'
-//	   +'<option value="900">900</option>'
-//	   +'<option value="1000">1000</option>'
-//	   +'</select>'          
-//       +'</div>' 
-//       +'</div>'  
-//       +'<br>'
-//       +'<div class="row">'
+ 
 	   
-	   
+	   var selection  = '<div class="row"><div class="col-sm-6" >'
+       +'<label class="labelstyle"> Select Material : </label>'   
+       +'</div>'
+       +'<div class="col-sm-6">'
+	   +'<select  class="form-control selectConf" id="material"  style="height:auto;">'
+	   +'<option value="0">--- Select Material --- </option>'
+	   +'<option value="1">Mica</option>'
+	   +'<option value="2">Glass</option>'
+	   +'<option value="3">Teflon</option>'
+//	   +'<option value="4">Paper</option>'
+//	   +'<option value="5">Copper</option>'
+	   +'</select>'          
+       +'</div>' 
+       +'</div>'
+        +'<br>'
+        
+        +'<div class="row">'
 	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Select Distance (mm) : </label>'
+	   +'<label class="labelstyle"> Voltage : </label>'
 	   +'</div>'
 	   +'<div class="col-sm-6">'
-	   +'<select  class="form-control selectConf" id="distance" " style="height:auto;">'
-	   +'<option value="0">--- Select Distance --- </option>'
-	   +'<option value="1" >1</option>'
-	   +'<option value="2">2</option>'
-	   +'<option value="3">3</option>'
-	  +'<option value=" 4">4 </option>'
-	  +'<option value=" 5">5 </option>'
-	  +'<option value=" 6">6 </option>'
-	  +'<option value=" 7">7 </option>'
-	  +'<option value="8 "> 8</option>'
-	  +'<option value="9 "> 9</option>'
-	  +'<option value="10">10</option>'
-
+	   +'<select  class="form-control selectConf" id="volt" " style="height:auto;">'
+	    +'<option value="0">--- Select Voltage --- </option>'
+	  	+'<option value="10">10</option>'
+	   +'<option value="20">20</option>'
+	  	   
 	   +'</select>'
 	   +'</div>'
 	   +'</div>'
-	   +'<br>'    
-	   +'<div class="row">'
+	   +'<br>'
 	   
-	   var selection  ='<div class="row"><div class="col-sm-6" >'
-//	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Enter Length (mm) : </label>'
-	   +'</div>'
-	    +'<div class="col-sm-4">'
-		 +'<input type="text" id="flowAns" style=margin:15px 10px;width:100%;"  class=" form-control"/>'
-		 +'</div>'
-	   
-	   
-	   
-	  
        +'<div class="col-sm-12" id="buttonDiv">'
-	   +'<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="submitconfig" data-toggle="modal" data-target="#selectCheck" ><b>  SUBMIT</b></button>' 
+	   +'<button type="button" style="padding: 8px; "  class="btn btn-danger btnStyle" id="submit" data-toggle="modal" data-target="#selectCheck" ><b>  SUBMIT</b></button>' 
 	    +'</div>'
-
+		+'<br>'
+		+'<br>'
     
-    +'<div class="row" id="timeAnswer" hidden>'
+    +'<div class="row" id="sensitivity" hidden >'
 	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle">Calculate Capacitance in (pF): </label>'
+	   +'<label class="labelstyle">Calculate Thickness Sensitivity Factor (mm/Volt): </label>'
 	   +'</div>'
 		+'<div class="col-sm-3">'
 	+'<input type="text" id="CalTime" style= 10px;width:100%;"  class=" form-control" />'
 	   +'</div>'
 	   +'<div class="col-sm-3">'
-	+'<button type="button"  "  class="btn btn-danger btnStyle" id="checkAsnTime" data-toggle="modal" data-target="#selectCheck" ><b>SUBMIT </b></button>'
+	+'<button type="button"  "  class="btn btn-danger btnStyle" id="checkAnsSen" data-toggle="modal" data-target="#selectCheck" ><b>SUBMIT </b></button>'
 	   +'</div>'
+	    +'</div>'
+	    +'<br>'
+	    
+	    +'<div class="row" id="thick" hidden>'
+	   +'<div class="col-sm-6">'
+	   +'<label class="labelstyle">Calculate Thickness in (mm): </label>'
+	   +'</div>'
+		+'<div class="col-sm-3">'
+	+'<input type="text" id="CalThk" style= 10px;width:100%;"  class=" form-control" />'
+	   +'</div>'
+	   +'<div class="col-sm-3">'
+	+'<button type="button"  "  class="btn btn-danger btnStyle" id="checkAsnThk"  ><b>SUBMIT </b></button>'
+	   +'</div>'
+	    +'</div>'
+	    +'<br>'
+	     +'<div class="col-sm-12" id="buttonDiv">'
+	   +'<button type="button" style="padding: 8px; "  class="btn btn-danger btnStyle" id="result" ><b> RESULT </b></button>' 
 	    +'</div>'
 	    
     
@@ -115,13 +104,14 @@ function mainPage2(){
 		$("#main-div-conf").html(selection);	
     
     id = 1;
-     $("#checkAsnTime").click(function() {
-			 
+    sentcnt = 0;
+     $("#checkAnsSen").click(function() {
+			 sentcnt++;
 				$("body").css("padding","0px 0px 0px 0px");
 			   var flowAns = $("#CalTime").val();
 	
 		
-				if(flowAns==""){
+				if(flowAns=="" || flowAns == isAlphabetical(flowAns)){
 					
 					$("#modelMsg123").html("<b class='boldTextRed'>Enter numeric value ");
 					
@@ -130,17 +120,22 @@ function mainPage2(){
 				else
 					{
 					if (id <= 3) {
-						if (flowAns == calculateTime.toFixed(3)) {
+						if (flowAns == sensitivity) {
 //							$("#modelMsg123").html("done ");
 							$("#timeAnswer").prop('hidden',true);
 							id=0;
 							
-							addToMasterJSON();
+//							addToMasterJSON();
 							
+							buttonflg = 1;
+							mimic();
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#errorPanel").prop("hidden",true);
+							$("#selectCheck").prop("hidden",true);
 							
-							$("#CalTime").val('');
+							$("#thick").prop('hidden',false);
 							
-						} else if (flowAns != calculateTime.toFixed(3)) {
+						} else if (flowAns != sensitivity.toFixed(3)) {
 					$("#modelMsg123").html("<b class='boldTextRed'>Entered value is incorrect.Try again .</b> ");
 //							
 						
@@ -149,29 +144,103 @@ function mainPage2(){
 
 					} else if (id == 4)
 					 {
-						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :Capacitance  = " + unescape('%u2208') + " X Area / Distance</b> ");
+						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :Sensitivity  = Operating Gap / (V<sub>o</sub>Air - (V<sub>o</sub>Air - V<sub>o</sub>Sample))</b> ");
 
 						
 					} else {
 						flowAns = $("#CalTime").val();
 //						flow = flowAns.toFixed(2);
-						if (flowAns == calculateTime.toFixed(3)) {
+						if (flowAns == sensitivity) {
 							
-//							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
 							$("#timeAnswer").prop('hidden',true);
 							
-							addToMasterJSON();
+//							addToMasterJSON();
+							buttonflg = 1;
+							mimic();
 							
 							
-							$("#CalTime").val('');
+							$("#thick").prop('hidden',false);
 							id=0;
+							$("#errorPanel").prop("hidden",true);
+							$("#selectCheck").prop("hidden",true);
 					
 						} else {
 
-							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +calculateTime.toFixed(3)+'</b>');
+							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +sensitivity+'</b>');
 						}
 					}
 					id++;
+					}
+					
+//					
+				});
+				
+				
+				id1 = 1;
+				thkcnt = 0;
+     $("#checkAsnThk").click(function() {
+			 thkcnt++;
+				$("body").css("padding","0px 0px 0px 0px");
+			   var flowAns = $("#CalThk").val();
+	
+		
+				if(flowAns=="" || flowAns == isAlphabetical(flowAns)){
+					
+					$("#modelMsg123").html("<b class='boldTextRed'>Enter numeric value ");
+					
+					
+				}
+				else
+					{
+					if (id1 <= 3) {
+						if (flowAns == thickness) {
+//							$("#modelMsg123").html("done ");
+							$("#timeAnswer").prop('hidden',true);
+							id1=0;
+							
+							addToMasterJSON1();
+							
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#CalThk").val('');
+							$("#errorPanel").prop("hidden",true);
+							$("#selectCheck").prop("hidden",true);
+							
+							
+						} else if (flowAns != thickness) {
+					$("#modelMsg123").html("<b class='boldTextRed'>Entered value is incorrect.Try again .</b> ");
+//							
+						
+						}
+
+
+					} else if (id1 == 4)
+					 {
+						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :Thickness = Thickness Sensitivity Factor  X (V<sub>o</sub> - V<sub>o</sub>Sample)</b> ");
+
+						
+					} else {
+						flowAns = $("#CalThk").val();
+//						flow = flowAns.toFixed(2);
+						if (flowAns == thickness) {
+							
+//							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#timeAnswer").prop('hidden',true);
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							addToMasterJSON1();
+							
+							
+							$("#CalThk").val('');
+							id1=0;
+							$("#errorPanel").prop("hidden",true);
+							$("#selectCheck").prop("hidden",true);
+					
+						} else {
+
+							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +thickness+'</b>');
+						}
+					}
+					id1++;
 					}
 					
 //					
@@ -184,11 +253,11 @@ function mainPage2(){
     
     
     
-     $("#submitconfig").click(function() {
-//		 width = $("#frequency").val();
-//		  distance = $("#distance").val();
-		  length = $("#flowAns").val();
-		  console.log("length changge"+length);
+     $("#submit").click(function() {
+
+		 material = 	$("#material").val();
+		 console.log(material);
+		volt = $("#volt").val();
 			
 				
 //				dataJson.pipe = pipeSize ;
@@ -198,30 +267,44 @@ function mainPage2(){
 //		     console.log("distance =   "+distSelect);
 //		    console.log("fluid TypeSelect =   "+fluidSelect);
 		   
-		   if(width1 == 0){
+		 
+	 if(material == 0){
 		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Select Frequency </b>");
-	}else if(distance == 0){
+		$("#modelMsg123").html("<b class='boldTextRed'>Please select Material </b>");
+	}else if (volt == 0){
 		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Select Distance </b>");
-	}else if(length == 0){
+		$("#modelMsg123").html("<b class='boldTextRed'>Please select Volt </b>");
+	}
+
+	else{
 		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg123").html("<b class='boldTextRed'>Please give a change in length </b>");
-	}else{
+		$("#sensitivity").prop('hidden',false);
 		$("#errorPanel").prop("hidden",true);
-		$("#modelMsg123").html("<b class='boldTextGreen'>Configured Successfully</b>");		
-		$("#pipeSizeSelect").prop('hidden',true);
-		$("#fluidSelect").prop('disabled',true);
-		$("#distSelect").prop('disabled',true);	
+		$("#selectCheck").prop("disabled",true);
 	
+//		$("#modelMsg123").html("<b class='boldTextGreen'>Configured Successfully</b>");	
 		
-			  animation2();
+		
+			  mimic();
 		
 		 
 				
 	}
 
 	});
-
+	
+	
+	
+	$("#result").click(function() {
+		
+		appli.senWro = sentcnt;
+		appli.thkwro = thkcnt;
+		appli.corapp = TimeMasterJson.app.length;
+		data.app = appli;
+		console.log(data);
+		
+		
+		result();
+	});	
 	             
 }
