@@ -71,12 +71,12 @@ function mainPage2(){
 	+'<input type="text" id="CalThk" style= 10px;width:100%;"  class=" form-control" />'
 	   +'</div>'
 	   +'<div class="col-sm-3">'
-	+'<button type="button"  "  class="btn btn-danger btnStyle" id="checkAsnThk"  ><b>SUBMIT </b></button>'
+	+'<button type="button"  "  class="btn btn-danger btnStyle" id="checkAsnThk" data-toggle="modal" data-target="#selectCheck" ><b>SUBMIT </b></button>'
 	   +'</div>'
 	    +'</div>'
 	    +'<br>'
 	     +'<div class="col-sm-12" id="buttonDiv">'
-	   +'<button type="button" style="padding: 8px; "  class="btn btn-danger btnStyle" id="result" ><b> RESULT </b></button>' 
+	   +'<button type="button" style="padding: 8px; "  class="btn btn-danger btnStyle" id="result" hidden><b> RESULT </b></button>' 
 	    +'</div>'
 	    
     
@@ -130,8 +130,7 @@ function mainPage2(){
 							buttonflg = 1;
 							mimic();
 							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
-							$("#errorPanel").prop("hidden",true);
-							$("#selectCheck").prop("hidden",true);
+							
 							
 							$("#thick").prop('hidden',false);
 							
@@ -162,8 +161,7 @@ function mainPage2(){
 							
 							$("#thick").prop('hidden',false);
 							id=0;
-							$("#errorPanel").prop("hidden",true);
-							$("#selectCheck").prop("hidden",true);
+							
 					
 						} else {
 
@@ -203,13 +201,13 @@ function mainPage2(){
 							
 							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
 							$("#CalThk").val('');
-							$("#errorPanel").prop("hidden",true);
-							$("#selectCheck").prop("hidden",true);
+							$("#result").prop("hidden",false);
+							
 							
 							
 						} else if (flowAns != thickness) {
 					$("#modelMsg123").html("<b class='boldTextRed'>Entered value is incorrect.Try again .</b> ");
-//							
+							
 						
 						}
 
@@ -224,16 +222,15 @@ function mainPage2(){
 //						flow = flowAns.toFixed(2);
 						if (flowAns == thickness) {
 							
-//							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
-							$("#timeAnswer").prop('hidden',true);
 							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#timeAnswer").prop('hidden',true);
+							$("#result").prop("hidden",false);
 							addToMasterJSON1();
 							
 							
 							$("#CalThk").val('');
 							id1=0;
-							$("#errorPanel").prop("hidden",true);
-							$("#selectCheck").prop("hidden",true);
+						
 					
 						} else {
 
