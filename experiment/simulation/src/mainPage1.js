@@ -1,9 +1,11 @@
 tableReading=0;
 var lengthmax = 0;
 var buttonflg = 0;
-config = {};
+
 $("#refer").prop('hidden',false);
+
 function mainPage1(){
+	$("#refer").prop('hidden',false);
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
      
@@ -256,6 +258,7 @@ function mainPage1(){
 	});
 	
 	 $("#next").click(function() {
+		 config = {};
 		 capacorrt = masterJson.demo.length;
 		config.correct = capacorrt;
 		config.wrong = capcnt;
@@ -268,7 +271,7 @@ function mainPage1(){
 		
 		mimic();
 	});
-	
+	$("#refer").prop('hidden',false);
 	$("#refer").click(function() { 
 	
 	modelImg = '<img src="images/Table.png" class="img-responsive" alt="Cinque Terre">'
