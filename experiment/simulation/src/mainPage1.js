@@ -258,14 +258,13 @@ function mainPage1(){
 	});
 	
 	 $("#next").click(function() {
-		 config = {};
+		 config1 = {};
 		 capacorrt = masterJson.demo.length;
-		config.correct = capacorrt;
-		config.wrong = capcnt;
-		data.config = config;
+		config1.correct = capacorrt;
+		config1.wrong = capcnt;
+		data.config = config1;
 		console.log(data);
-		$("#errorPanel").prop("hidden",true);
-		$("#selectCheck").prop("hidden",true);
+		
 		mainPage2();
 	
 		
