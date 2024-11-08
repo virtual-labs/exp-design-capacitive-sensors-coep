@@ -105,19 +105,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "In touch screen applications, capacitive sensors detect",
+					"QC": "Capacitive sensors require which kind of material to function efficiently for proximity detection",
 					"ANS": [{
 						"ANSID": false,
-						"content": "The pressure applied by the finger"
+						"content": "High thermal conductivity"
 					}, {
 						"ANSID": true,
-						"content": "The capacitance change due to the finger"
+						"content": "High dielectric constant"
 					}, {
 						"ANSID": false,
-						"content": "The heat from the finger"
+						"content": "High optical transparency"
 					}, {
 						"ANSID": false,
-						"content": "The color of the touch"
+						"content": "High acoustic absorption"
 					}]
 					
 				}]

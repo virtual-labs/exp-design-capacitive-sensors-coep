@@ -32,6 +32,11 @@
 	 background-color: #cccccc;
 }
 
+#next{
+	background-color: #31717b;
+	color:#fff;
+}
+
 /* #movebtn,#movebtn1{ */
 /*  position: absolute; */
 /*             top: 0; */

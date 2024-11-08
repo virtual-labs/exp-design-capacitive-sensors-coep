@@ -39,11 +39,12 @@ function tableCreate(masterJson)
 					
 					 if(tableReading >= 2)
 					 {
-//						tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="nextLevel"  ><b>NEXT LEVEL </b></button></div>'
+//						tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="next"  ><b>NEXT LEVEL </b></button></div>'
 						
 //						$("#main-div-conf").html('');
 //						$("#canvas-div").html('');
 						$("#next").prop('hidden',false);
+						$("#timeAnswer").prop('hidden', true);
 						
 					}
 					
@@ -64,6 +65,20 @@ function tableCreate(masterJson)
 						
 								mainPage2();
 					});
+					
+						 $("#next").click(function() {
+							 config1 = {};
+							 capacorrt = masterJson.demo.length;
+							 config1.correct = capacorrt;
+							config1.wrong = capcnt;
+							data.config = config1;
+							console.log(data);
+							$("#errorPanel").prop("hidden",true);
+					$("#selectCheck").prop("hidden",true);
+						mainPage2();
+		
+					mimic();
+				});
 					$("#selectMethod").change(function() {
 						methodType=$("#methodType").val();
 						if(methodType==1)
