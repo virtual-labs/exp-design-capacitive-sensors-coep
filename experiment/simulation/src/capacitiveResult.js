@@ -27,8 +27,10 @@ function result(){
     }
 }		
 
-$("#refer").prop('hidden',true);
-$("#btnForModal").prop("hidden",true);
+$("#refer12").prop('hidden',true);
+$("#procedure-btn").prop("hidden",true);
+
+$("#simDemo").prop("hidden",true);
 		 console.log(data);
 //Basic knowledge	 
 if("corrAns" in data)
@@ -66,13 +68,15 @@ console.log(quesPercent);
 	var powperct = senwrong+thkwrong;
 	powperct = parseFloat(powperct);
 	 console.log("rope__"+powperct);
+
+var configure1 = 100;	 
 	
  var confi = ( wrong/correct)*100;
 	
 	 console.log("eddy__"+confi);
 	
 
-var oberve = (powperct/(corrapp+corrapp))*100;	
+var oberve = ((corrapp+corrapp)/powperct)*100;	
 
 
 if (senwrong ==corrapp){
@@ -98,7 +102,7 @@ var htm = ''
 
 	+ '<div class="col-md-12">'
 	+ ' <div class="panel remarkBground" >'
-	+ ' <div class="panel-body remark" ><center> <br> <b> Capasitive Sensor Experiment is Completed Sucessfully </b>'
+	+ ' <div class="panel-body remark" style = "font-size:20px;"><center> <br> <b> Capasitive Sensor Experiment is Completed Sucessfully !!</b>'
 	+ '<br> <b> </b></center></div>'
 	+ '</div>'
 	+ '</div>'
@@ -127,13 +131,23 @@ var htm = ''
 		  htm +='  </tr>'
 		   +'  <tr>'
 		   +'     <td class=""><center>Configuration</center></td>'
-		  	if(confi>=60){ 
+		  	if(configure1>=60){ 
 		   
 		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
 		   }else{
 			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
 			}
 		 	 htm +='  </tr>'
+		 	htm +='  </tr>'
+		   +'  <tr>'
+		   +'     <td class=""><center>Capacitance Calculation</center></td>'
+		  	if(confi>=60){ 
+		   
+		   htm +='     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+			}
+		 	 htm +='  </tr>' 
 		   
 		   +'   <tr>'
 		  +'     <td class=""><center>Application</center></td>'
@@ -144,7 +158,7 @@ var htm = ''
 			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
 			}
 		 	 htm +='  </tr>'
-//		   +'  <tr>'
+		   +'  <tr>'
 //			+'<td class=""><center>Fault Finding</center></td>'
 //		   if(faultperct>=60){ 
 //		   
@@ -433,11 +447,13 @@ let initialData = [
 //
 //// Create the pie chart
 let chart = Highcharts.chart('graph-div', {
+	exporting: { enabled: false },
+	credits: { enabled: false},
     chart: {
         type: 'pie'
     },
     title: {
-        text: 'Observations'
+        text: ''
     },
     series: [{
         name: 'Observed',

@@ -27,6 +27,60 @@
 }
 
 
+.button1 {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 15px;
+ padding: 5px 10px; 
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 20px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+ .btn1 {
+        margin-left:10px;
+        margin-right: 10px;
+        margin-top:7px;
+        float:right;
+        margin-bottom:10px;
+        padding: 7px; 
+        border:none; 
+        border-radius: 5px;
+        }
+
+
 
 </style>
 <body bgproperties="fixed">
@@ -34,7 +88,7 @@
 <header>
 		<img class="Coeplogo" src='images/COEPlogo.png' />
 		<img class="VlabLogo" src='images/vlablogo.jpg' />
-		<span id="colgName">COEP Technological University</span>		
+		<span id="colgName">COEP TECHNOLOGICAL UNIVERSITY PUNE</span>		
 		
 	</header>
 
@@ -53,43 +107,22 @@
 <!--        </div> -->
 <!--        <div class="col-sm-3"></div> -->
 <!--        </div>  -->
- 	
- 	<div  class="row container" style="">	
-	  <div  class="col-sm-8" >
-	  </div>
-	   <div  class="col-sm-2" >
-		<button type="button" class="btn btn-danger" style="margin-top:7px;margin-bottom:5px;"  id = "pdfDownload" hidden>
-	  Download Result
-	 
-	</button>
-	</div>
-	 <div  class="col-sm-2" >
-	 </div>
-	
-	</div>
- 
-       <div class="row">
-		<div  class="col-sm-3">
-      <div  class="col-sm-4"> 
-      <button type="button" id="refer" class="btn btn-danger btnStyle" data-toggle="modal" style="margin-top:-1px" data-target="#selectCheck" hidden >Refer</button>
-     </div>
-     </div>
-      
+
+
+	<div class="row container-fluid">
+	 <div  class="col-sm-12">
+		<button type="button" class="btn btn-danger btn1" id = "pdfDownload" hidden>Download Result </button>
+   
+       <button type="button" id="refer12" class=" btn-danger btn1" data-toggle="modal"  data-target="#selectCheck" hidden>Refer</button>
+    
+<!--      <button type="button" id = "refer12" class="btn btn-primary button1 btn1"  data-toggle="modal" data-target="#exampleModal1" hidden> refer123</button> -->
+     <button type="button" id = "procedure-btn" class="btn btn-primary button1 btn1"  data-toggle="modal" data-target="#exampleModal1"> Procedure</button>
      
-     <div class="row">
-	<div  class="col-sm-10"> 
-	</div>
-  
-	
-      <div class="row">
-<div  class="col-sm-2"> 
-      <button type="button" class="btn btn-primary btnMarin" data-toggle="modal" style="margin-top:7px;margin-bottom:5px;" data-target="#exampleModal1" id = "btnForModal">
-	  Procedure
-	</button>
-	 </div>
- </div>
- </div>
-  
+     <button type="button" class="btn btn-danger btn1" data-toggle="modal"  data-target="#readProcedureModal1" id = "simDemo" hidden>Simulation Demo</button>
+     </div>
+      </div>
+ 	
+ 
  
 
  
@@ -128,7 +161,7 @@
 	       </div>
 	<div class="col-lg-6" id="canvas">
 				<div class="panel panel-primary">
-	      			<div class="panel-heading " id="panelHeading1"><center id="centerText ">BASIC KNOWLEDGE</center>
+	      			<div class="panel-heading " id="panelHeading1"><center id="centerText">BASIC KNOWLEDGE</center>
 	      			</div>
 	     			<div class="panel-body" id="main-div-conf">
 <!-- 	     			<script>basicKnowledge();</script> -->
@@ -200,8 +233,7 @@ function isAlphabetical(input) {
 
 var proc = '';
 proc += ''
-	+ '<h3> Procedure</h3>'
-
+	
 	+ '<h3> Basic Knowledge</h3> '
 	+ '<ol><li> Answer all the questions and click on next level</ol>'
 

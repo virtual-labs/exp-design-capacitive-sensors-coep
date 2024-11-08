@@ -3,7 +3,9 @@
 function mimic() {
 	//	var paper = new Raphael(document.getElementById('canvas-div'), 1000, 1000);
 	$("#canvas-div").html('');	
+	 $("#centerText").html('CONFIGURATION');
 	$("#centerText1").html('THICKNESS OF OBJECT');
+	
 
 	$('#canvas-div').removeAttr('width');
 	$('#canvas-div').removeAttr('height');

@@ -15,6 +15,6 @@
 - Set the output voltage for Air  
 - Calculate thickness sensitivity factor for sensor 
 - Click on "SHEET" button to place the sample sheet for thickness testing 
-- click on "TEST" button to obeserve output voltage 
-- calculate sample sheet thickness 
+- Click on "TEST" button to obeserve output voltage 
+- Calculate sample sheet thickness 
 - Enter sheet thickness and validate the answer 
