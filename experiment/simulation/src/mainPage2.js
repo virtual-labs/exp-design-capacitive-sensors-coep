@@ -7,18 +7,18 @@ function mainPage2(){
      $("#tableDesign").html("");
       $("#selectMethod").prop('disabled',true);
       $("#centerText1").html('Capacitive Sensor');
-      $("#centerText2").html('CONFIGURATION');
+      $("#centerText").html('CONFIGURATION');
 //      var htm = '<img src="images/capacitor_img0001.png" class="img-fluid" >'
       $("#canvas-div").html();
       console.log("len max"+lengthmax);
  
 	   
 	   var selection  = '<div class="row"><div class="col-sm-6" >'
-       +'<label class="labelstyle"> Select Material : </label>'   
+       +'<label class="labelstyle"> Select Dielectric Material : </label>'   
        +'</div>'
        +'<div class="col-sm-6">'
 	   +'<select  class="form-control selectConf" id="material"  style="height:auto;">'
-	   +'<option value="0">--- Select Material --- </option>'
+	   +'<option value="0">--- Select Dielectric Material --- </option>'
 	   +'<option value="1">Mica</option>'
 	   +'<option value="2">Glass</option>'
 	   +'<option value="3">Teflon</option>'
@@ -31,11 +31,11 @@ function mainPage2(){
         
         +'<div class="row">'
 	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Excitation Voltage (volt) : </label>'
+	   +'<label class="labelstyle">Excitation Voltage (volt): </label>'
 	   +'</div>'
 	   +'<div class="col-sm-6">'
 	   +'<select  class="form-control selectConf" id="volt" " style="height:auto;">'
-	    +'<option value="0">--- Select Voltage --- </option>'
+	    +'<option value="0">--- Select Excitation Voltage --- </option>'
 	  	+'<option value="10">10</option>'
 	   +'<option value="20">20</option>'
 	  	   

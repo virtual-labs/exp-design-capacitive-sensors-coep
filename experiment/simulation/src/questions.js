@@ -119,19 +119,20 @@
                          $('#nextLevelConfig').prop('hidden',false);
 						 
 						    $('#testSubmit').prop('hidden',true); 
+						       
 
 		   			
 					}
 					
 					$('#nextLevelConfig').on('click', function() {	
 						 
-	      if(ansCount != 0){
+	  
 		
 				$("#main-div-conf").html("");
 	             $("#canvas-div").html("");
 				mainPage1();
 //				  mimic();
-	} 
+	
 	});	
 					
 });

@@ -12,11 +12,11 @@ The equations below express the capacitance between the plates of a capacitor
 
 ![1](images/figure1.jpg)
 
-Where A – overlapping area of plates in m2
+Where A – overlapping area of plates in m<sup>2</sup>
 d – the distance between two plates in meter
 ε – permittivity of the medium in F/m
-εr – relative permittivity
-ε0 – the permittivity of free space
+ε<sub>r</sub> – relative permittivity
+ε<sub>0</sub> – the permittivity of free space
 
 The schematic diagram of a parallel plate capacitive transducer is shown in the figure below. 
 

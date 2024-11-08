@@ -9,17 +9,17 @@ function mainPage1(){
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
      
-      $("#centerText1").html('Capacitive Sensor Diagram');
+      $("#centerText1").html('CAPACITIVE SENSOR DIAGRAM');
       $("#centerText").html('CONFIGURATION');
       var htm = '<img src="images/capacitivesensor1.jpg" class="img-fluid" >'
       $("#canvas-div").html(htm);
 //      animation();
       var selection  ='<div class="row"><div class="col-sm-6" >'
-       +'<label class="labelstyle"> Select Material : </label>'   
+       +'<label class="labelstyle"> Select Dielectric Material : </label>'   
        +'</div>'
        +'<div class="col-sm-6">'
 	   +'<select  class="form-control selectConf" id="material"  style="height:auto;">'
-	   +'<option value="0">--- Select Material --- </option>'
+	   +'<option value="0">--- Select Dielectric Material --- </option>'
 	   +'<option value="1">Mica</option>'
 	   +'<option value="2">Glass</option>'
 	   +'<option value="3">Teflon</option>'
@@ -80,7 +80,7 @@ function mainPage1(){
 	   +'</div>'
 	   +'<div class="col-sm-6">'
 	   +'<select  class="form-control selectConf" id="distance" " style="height:auto;">'
-	   +'<option value="0">--- Select Distance --- </option>'
+	   +'<option value="0">--- Select Thickness --- </option>'
 	   +'<option value="1" >1</option>'
 	   +'<option value="2">2</option>'
 	   +'<option value="3">3</option>'
@@ -118,9 +118,9 @@ function mainPage1(){
 	   +'<div class="col-sm-3">'
 	+'<button type="button"  "  class="btn btn-danger btnStyle" id="checkAsnTime" data-toggle="modal" data-target="#selectCheck" ><b>SUBMIT </b></button>'
 	   +'</div>'
-	    +'</div>'
+	    +'</div><br>'
 	     +'<div class="col-sm-12" id="buttonDiv">'
-	   +'<button type="button" style="padding: 8px; "  class="btn btn-danger btnStyle" id="next"  hidden ><b>  NEXT PAGE </b></button>' 
+	   +'<button type="button" style="padding: 6px;"  class="btn btnStyle " id="next" hidden ><b>  NEXT PAGE </b></button>' 
 	    +'</div>'
 
       +'<br>'
@@ -264,14 +264,15 @@ function mainPage1(){
 		config1.wrong = capcnt;
 		data.config = config1;
 		console.log(data);
-		
+		$("#errorPanel").prop("hidden",true);
+		$("#selectCheck").prop("hidden",true);
 		mainPage2();
 	
 		
 		mimic();
 	});
-	$("#refer").prop('hidden',false);
-	$("#refer").click(function() { 
+	$("#refer12").prop('hidden',false);
+	$("#refer12").click(function() { 
 	
 	modelImg = '<img src="images/Table.png" class="img-responsive" alt="Cinque Terre">'
 	$("#modelMsg123").html(modelImg);
