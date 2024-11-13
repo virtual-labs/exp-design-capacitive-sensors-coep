@@ -31,7 +31,7 @@ $("#refer12").prop('hidden',true);
 $("#procedure-btn").prop("hidden",true);
 
 $("#simDemo").prop("hidden",true);
-		 console.log(data);
+		
 //Basic knowledge	 
 if("corrAns" in data)
 {
@@ -63,17 +63,17 @@ var correctVal = (data.corrAns.corrAns/6).toFixed(2);
 var quesPercent = (correctVal*100).toFixed(1);
 quesPercent = parseFloat(quesPercent);
 
-console.log(quesPercent);
+
 
 	var powperct = senwrong+thkwrong;
 	powperct = parseFloat(powperct);
-	 console.log("rope__"+powperct);
+	 
 
 var configure1 = 100;	 
 	
  var confi = ( wrong/correct)*100;
 	
-	 console.log("eddy__"+confi);
+	
 	
 
 var oberve = ((corrapp+corrapp)/powperct)*100;	

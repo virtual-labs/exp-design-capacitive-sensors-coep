@@ -224,12 +224,7 @@ function mainPage1(){
 		  material = $("#material").val();
 			lengthmax = length;
 				
-//				dataJson.pipe = pipeSize ;
-//				dataJson.fluid = fluidType;
-//				dataJson.material = floatMaterial;
-		   console.log("wdt =  "+ width1);	  
-		     console.log("distance =   "+distance);
-		    console.log("length =   "+length);
+
 		   
 		   if(width1 == 0){
 		$("#errorPanel").prop("hidden",false);
@@ -263,7 +258,7 @@ function mainPage1(){
 		config1.correct = capacorrt;
 		config1.wrong = capcnt;
 		data.config = config1;
-		console.log(data);
+		
 		$("#errorPanel").prop("hidden",true);
 		$("#selectCheck").prop("hidden",true);
 		mainPage2();

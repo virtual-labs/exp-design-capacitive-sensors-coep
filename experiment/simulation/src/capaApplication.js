@@ -45,7 +45,7 @@ function mimic() {
 		constant = 2.1;
 		matName = "Teflon";
 	}
-	console.log("Material string"+matName);
+	
 	 min = 1;
 	 max = 5;
 	var thk =  Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -263,7 +263,9 @@ var heightScaleStart = 1; // Initial scale factor for height
 	 
 
 	
-	console.log("sensitivity,volt,thik,random thok"+sensitivity,samvolt,thickness,thk);
+	
+	
+
 		function sensitivityCal(x,y){
 			
 		}
@@ -294,12 +296,12 @@ var heightScaleStart = 1; // Initial scale factor for height
 	function addToMasterJSON1() {
 	
 	tempJson1 = {};
-	tempJson1.material = material;
+	tempJson1.material = matName;
 	tempJson1.thickness = thickness;
 	tempJson1.sensitivty = sensitivity ;
 	array.push(tempJson1);
 	TimeMasterJson.app = array;
-	console.log(TimeMasterJson);
+	
 	tableCreateApp(TimeMasterJson);
 
 }
