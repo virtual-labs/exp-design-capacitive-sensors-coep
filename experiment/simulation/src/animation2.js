@@ -60,13 +60,13 @@ function animation2() {
 	calculateTime = capacitance / Math.pow(10, -12);
 
 
-	console.log("Time Calculation" + calculateTime)
+	
 
 
 	var plate;
 	var plae_line;
 
-	console.log("Time Calculation" + calculateTime)
+	
 	plate_fix(x, y);
 
 	//	plate_rotate(x, y);
@@ -167,7 +167,7 @@ function animation2() {
 	$("#checkAsnTime").click(function() {
 
 		decrement(x, y);
-		console.log("animate cal");
+		
 	});
 
 
@@ -190,7 +190,7 @@ function addToMasterJSON() {
 	tempJson.area1 = area;
 	ArrayJson.push(tempJson);
 	masterJson.demo = ArrayJson;
-	console.log(masterJson);
+	
 	tableCreate(masterJson);
 
 }

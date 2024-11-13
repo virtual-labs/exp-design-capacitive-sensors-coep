@@ -1,7 +1,7 @@
 var ArrayJson=[];
 appli = {};
 function mainPage2(){
-	console.log("MAIN PAGE 2");
+	
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
      $("#tableDesign").html("");
@@ -10,7 +10,7 @@ function mainPage2(){
       $("#centerText").html('CONFIGURATION');
 //      var htm = '<img src="images/capacitor_img0001.png" class="img-fluid" >'
       $("#canvas-div").html();
-      console.log("len max"+lengthmax);
+    
  
 	   
 	   var selection  = '<div class="row"><div class="col-sm-6" >'
@@ -253,7 +253,7 @@ function mainPage2(){
      $("#submit").click(function() {
 
 		 material = 	$("#material").val();
-		 console.log(material);
+		
 		volt = $("#volt").val();
 			
 				
@@ -298,7 +298,7 @@ function mainPage2(){
 		appli.thkwro = thkcnt;
 		appli.corapp = TimeMasterJson.app.length;
 		data.app = appli;
-		console.log(data);
+	
 		
 		
 		result();
