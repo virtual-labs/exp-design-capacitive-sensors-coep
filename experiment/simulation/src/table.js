@@ -1,7 +1,7 @@
 
 function tableCreate(masterJson)		
 {
-			console.log(masterJson);
+			
 			var tableMainDiv='<div class="col-sm-12">'
 //					+ '<div class=" well well-lg">'
 ////					+'<center class="blink"> TAKE ALL '+applicationName+' READINGS. </center>'
@@ -50,7 +50,7 @@ function tableCreate(masterJson)
 					
 					$("#tableDesign").html(tableMainDiv);
 					 tableReading++;
-					 console.log("tableReading "+tableReading);
+				
 					$("#nextLevel").click(function() {
 						$("#selectMethod").prop('hidden',true);
 						$("#submitconfig").prop('disabled',true);
@@ -72,7 +72,7 @@ function tableCreate(masterJson)
 							 config1.correct = capacorrt;
 							config1.wrong = capcnt;
 							data.config = config1;
-							console.log(data);
+							
 							$("#errorPanel").prop("hidden",true);
 					$("#selectCheck").prop("hidden",true);
 						mainPage2();
@@ -106,7 +106,7 @@ function tableCreate(masterJson)
 //application table
 function tableCreateApp()		
 {
-			console.log(TimeMasterJson);
+			
 			var tableMainDiv='<div class="col-sm-12">'
 //					+ '<div class=" well well-lg">'
 ////					+'<center class="blink"> TAKE ALL '+applicationName+' READINGS. </center>'
@@ -149,7 +149,7 @@ function tableCreateApp()
 					
 					$("#tableDesign").html(tableMainDiv);
 					 tableReading++;
-					 console.log("tableReading "+tableReading);
+					
 					$("#nextLevel").click(function() {
 						$("#selectMethod").prop('hidden',false);
 						$("#submitconfig").prop('disabled',true);
@@ -178,7 +178,7 @@ function tableCreateApp()
 //Level MEASUREMENT
 function tableCreateLevel(masterJson1)		
 {
-			console.log(masterJson1);
+			
 			var tableMainDiv='<div class="col-sm-12">'
 //					+ '<div class=" well well-lg">'
 ////					+'<center class="blink"> TAKE ALL '+applicationName+' READINGS. </center>'

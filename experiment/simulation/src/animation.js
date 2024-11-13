@@ -54,9 +54,7 @@ function animation() {
 
 
 	area = width1 * length;
-	console.log("width -"+width1);
-	console.log("length -"+length);
-	console.log("area" + area);
+
 	constant = 0;
 	matName = '';
 	if (material == 1){
@@ -74,18 +72,18 @@ function animation() {
 	capacitance = (constant ) * (area* Math.pow(10, -6) )/ (distance* Math.pow(10, -3));
 	//	console.log("area capata"+capacitance);
 	capacitance1 = ((constant ) * (area* Math.pow(10, -4) )/ (distance* Math.pow(10, -3))).toFixed(3);
-	console.log(capacitance1);
+
 	calculateTime = parseFloat(capacitance1);
 //	calculateTime = capacitance / Math.pow(10, -12);
 	var plate ;
 	var plae_line;
 
-	console.log("Time Calculation" + calculateTime)
+	
 //	plate_fix(x, y);
 	var x1 = 0;
 	if (distance != 0){
 		x1 = (distance * (100 - 50) / 10) + 50;
-		console.log("x1 value"+x1);
+	
 //			plate_rotate(x-200+x1, y);
 	}
 
@@ -174,7 +172,7 @@ function addToMasterJSON() {
 	tempJson.calculateTime = calculateTime;
 	ArrayJson.push(tempJson);
 	TimeMasterJson.demo = ArrayJson;
-	console.log(TimeMasterJson);
+
 	tableCreate(TimeMasterJson);
 
 }
