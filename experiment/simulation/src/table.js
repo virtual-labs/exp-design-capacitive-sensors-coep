@@ -15,7 +15,7 @@ function tableCreate(masterJson)
 					+ '  <th><center>Sr.No</center></th>'
 					+ '  <th scope="col"><center>Area (mm<sup>2</sup>)</center></th>'
 //					+ '   <th scope="col"><center >Distance (cm)</center></th>'
-					+ '  <th scope="col"><center>Distance (mm)</center></th>'
+					+ '  <th scope="col"><center>Thickness (mm)</center></th>'
 //					+ '  <th scope="col"><center>distPath</center></th>'
 //					+ '  <th scope="col"><center>speed</center></th>'
 					+ '  <th scope="col"><center>Calculated Capacitance (pf)</center></th>'

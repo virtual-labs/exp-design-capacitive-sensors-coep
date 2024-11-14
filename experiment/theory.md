@@ -10,13 +10,13 @@ The capacitors measure both the static and dynamic changes. The displacement is 
 #### Principle of Operation : 
 The equations below express the capacitance between the plates of a capacitor
 
-![1](images/figure1.jpg)
+![1](images/figure1.jpg) -----(1)
 
-Where A – overlapping area of plates in m<sup>2</sup>
-d – the distance between two plates in meter
-ε – permittivity of the medium in F/m
-ε<sub>r</sub> – relative permittivity
-ε<sub>0</sub> – the permittivity of free space
+Where,<br> A – overlapping area of plates in m<sup>2</sup><br>
+d – the distance between two plates in meter<br>
+ε – permittivity of the medium in F/m<br>
+ε<sub>r</sub> – relative permittivity<br>
+ε<sub>0</sub> – the permittivity of free space<br>
 
 The schematic diagram of a parallel plate capacitive transducer is shown in the figure below. 
 
@@ -25,10 +25,10 @@ The schematic diagram of a parallel plate capacitive transducer is shown in the 
 The change in capacitance occurs because of the physicals variables like displacement, force, pressure, etc. The capacitance of the transducer also changes by the variation in their dielectric constant which is usually because of the measurement of liquid or gas level.
 The capacitance of the transducer is measured with the bridge circuit. The output impedance of transducer is given as
 
-![3](images/figure3.jpg)
+![3](images/figure3.jpg) -----(2)
 
-Where, C – capacitance
-f – frequency of excitation in Hz.
+Where, <br> C – capacitance<br>
+f – frequency of excitation in Hz.<br>
 The capacitive transducer is mainly used for measurement of linear displacement. The capacitive transducer uses the following three effects.
 1.	Variation in capacitance of transducer is because of the overlapping of capacitor plates.
 2.	The change in capacitance is because of the change in distances between the plates.
@@ -56,13 +56,13 @@ The equation below shows that the capacitance is directly proportional to the ar
 The capacitive transducers are used for measuring the large displacement approximately from 1mm to several cms. The area of the capacitive transducer changes linearly with the capacitance and the displacement. Initially, the nonlinearity occurs in the system because of the edges. Otherwise, it gives the linear response.
 The capacitance of the parallel plates is given as 
 
-![7](images/figure7.jpg)
+![7](images/figure7.jpg) ------(3)
  
-where x – the length of overlapping part of plates
-ω – the width of overlapping part of plates.
+where,<br> x – the length of overlapping part of plates<br>
+ω – the width of overlapping part of plates.<br>
 The sensitivity of the displacement is constant, and therefore it gives the linear relation between the capacitance and displacement.
  
- ![8](images/figure8.jpg)
+ ![8](images/figure8.jpg) -----(4)
  
 The capacitive transducer is used for measuring the angular displacement. It is measured by the movable plates shown below. One of the plates of the transducer is fixed, and the other is movable.
 
@@ -74,15 +74,15 @@ The variation of capacitance with angular displacement is linear as shown in the
 
 The angular movement changes the capacitance of the transducers. The capacitance between them is maximum when these plates overlap each other. The maximum value of capacitance is expressed as 
 
-![11](images/figure11.jpg)
+![11](images/figure11.jpg) ------(5)
  
 The capacitance at angle θ is given expressed as,
  
- ![12](images/figure12.jpg)
+ ![12](images/figure12.jpg) ------(6)
  
 θ – angular displacement in radian. The sensitivity for the change in capacitance is given as 
 
-![13](images/figure13.jpg)
+![13](images/figure13.jpg) ------(7)
  
 The 180° is the maximum value of the angular displacement of the capacitor.
 #### Advantage of Capacitive Transducer
