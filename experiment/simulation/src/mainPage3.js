@@ -97,7 +97,7 @@ function mainPage3(){
 
 					} else if (id == 4)
 					 {
-						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :Capacitance  = " + unescape('%u2208') + " X Area / Distance</b> ");
+						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :<br/>Capacitance  = " + unescape('%u2208') + " X Area / Distance</b> ");
 
 						
 					} else {
@@ -116,7 +116,7 @@ function mainPage3(){
 					
 						} else {
 
-							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +calculateTime.toFixed(3)+'</b>');
+							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct answer is  " +calculateTime.toFixed(3)+'</b>');
 						}
 					}
 					id++;
@@ -149,7 +149,7 @@ function mainPage3(){
 		$("#modelMsg123").html("<b class='boldTextRed'>Select Distance </b>");
 	}else{
 		$("#errorPanel").prop("hidden",true);
-		$("#modelMsg123").html("<b class='boldTextGreen'>Configured Successfully</b>");		
+		$("#modelMsg123").html("<b class='boldTextGreen'>Configured successfully</b>");		
 		$("#pipeSizeSelect").prop('hidden',true);
 		$("#angleSelect").prop('disabled',true);
 		$("#flowRateSelect").prop('disabled',true);
