@@ -131,7 +131,7 @@ function mimic() {
 				 }else {
 					 setTimeout(function() { analog = paper.text((x + 730), (y + 140), volt).attr({ 'font-size': 25, 'stroke': 'white', 'fontFamily' :'Arial'}) },1010);
 				 }
-				
+				$("#thick").prop("hidden", false);
 			 
 		 });
             

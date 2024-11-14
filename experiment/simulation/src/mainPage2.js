@@ -65,7 +65,7 @@ function mainPage2(){
 	    
 	    +'<div class="row" id="thick" hidden>'
 	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle">Calculate Thickness in (mm): </label>'
+	   +'<label class="labelstyle">Calculate Thickness (mm): </label>'
 	   +'</div>'
 		+'<div class="col-sm-3">'
 	+'<input type="text" id="CalThk" style= 10px;width:100%;"  class=" form-control" />'
@@ -129,10 +129,10 @@ function mainPage2(){
 							
 							buttonflg = 1;
 							mimic();
-							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct answer. Click on 'PLATE' button</b>");
 							
 							
-							$("#thick").prop('hidden',false);
+							//$("#thick").prop('hidden',false);
 							
 						} else if (flowAns != sensitivity.toFixed(3)) {
 					$("#modelMsg123").html("<b class='boldTextRed'>Entered value is incorrect.Try again .</b> ");
@@ -143,7 +143,7 @@ function mainPage2(){
 
 					} else if (id == 4)
 					 {
-						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :Sensitivity  = Operating Gap / (V<sub>o</sub>Air - (V<sub>o</sub>Air - V<sub>o</sub>Sample))</b> ");
+						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :<br/>Sensitivity  = Operating Gap / (V<sub>o</sub>Air - (V<sub>o</sub>Air - V<sub>o</sub>Sample))</b> ");
 
 						
 					} else {
@@ -151,7 +151,7 @@ function mainPage2(){
 //						flow = flowAns.toFixed(2);
 						if (flowAns == sensitivity) {
 							
-							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct answer. Click on 'PLATE' button</b>");
 							$("#timeAnswer").prop('hidden',true);
 							
 //							addToMasterJSON();
@@ -159,13 +159,13 @@ function mainPage2(){
 							mimic();
 							
 							
-							$("#thick").prop('hidden',false);
+							//$("#thick").prop('hidden',false);
 							id=0;
 							
 					
 						} else {
 
-							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +sensitivity+'</b>');
+							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct answer is  " +sensitivity+'</b>');
 						}
 					}
 					id++;
@@ -199,9 +199,9 @@ function mainPage2(){
 							
 							addToMasterJSON1();
 							
-							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct answer</b>");
 							$("#CalThk").val('');
-							$("#result").prop("hidden",false);
+							
 							
 							
 							
@@ -214,7 +214,7 @@ function mainPage2(){
 
 					} else if (id1 == 4)
 					 {
-						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :Thickness = Thickness Sensitivity Factor  X (V<sub>o</sub> - V<sub>o</sub>Sample)</b> ");
+						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :<br/>Thickness = Thickness Sensitivity Factor  X (V<sub>o</sub> - V<sub>o</sub>Sample)</b> ");
 
 						
 					} else {
@@ -222,9 +222,9 @@ function mainPage2(){
 //						flow = flowAns.toFixed(2);
 						if (flowAns == thickness) {
 							
-							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct answer</b>");
 							$("#timeAnswer").prop('hidden',true);
-							$("#result").prop("hidden",false);
+							//$("#result").prop("hidden",false);
 							addToMasterJSON1();
 							
 							
@@ -234,7 +234,7 @@ function mainPage2(){
 					
 						} else {
 
-							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +thickness+'</b>');
+							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct answer is  " +thickness+'</b>');
 						}
 					}
 					id1++;

@@ -1,4 +1,4 @@
-
+var tableReading1 = 0;
 function tableCreate(masterJson)		
 {
 			
@@ -15,7 +15,7 @@ function tableCreate(masterJson)
 					+ '  <th><center>Sr.No</center></th>'
 					+ '  <th scope="col"><center>Area (mm<sup>2</sup>)</center></th>'
 //					+ '   <th scope="col"><center >Distance (cm)</center></th>'
-					+ '  <th scope="col"><center>Thickness (mm)</center></th>'
+					+ '  <th scope="col"><center>Distance (mm)</center></th>'
 //					+ '  <th scope="col"><center>distPath</center></th>'
 //					+ '  <th scope="col"><center>speed</center></th>'
 					+ '  <th scope="col"><center>Calculated Capacitance (pf)</center></th>'
@@ -142,13 +142,14 @@ function tableCreateApp()
 					 + '  </table>'
 					 + ' </div>'
 					
-					 if(tableReading==4)
+					 if(tableReading1>=2)
 					 {
-						tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="nextLevel"  ><b>NEXT LEVEL </b></button></div>'
+						//tableMainDiv +='<div class="col-sm-12"><button type="button"    class="btn btn-danger btnStyle" id="nextLevel"  ><b>NEXT LEVEL //</b></button></div>'
+						$("#result").prop("hidden",false);
 					}
 					
 					$("#tableDesign").html(tableMainDiv);
-					 tableReading++;
+					 tableReading1++;
 					
 					$("#nextLevel").click(function() {
 						$("#selectMethod").prop('hidden',false);
@@ -166,6 +167,10 @@ function tableCreateApp()
 						
 						
 					});
+					
+					$("#thick").prop("hidden", true);
+					$("#CalTime").val('');
+					$("#sensitivity").prop("hidden", true);
 					
 				}
 
