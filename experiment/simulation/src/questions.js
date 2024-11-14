@@ -93,7 +93,7 @@
 							flag = flag && false;
 //							alert('Please attempt all the questions');
 							$("body").css("padding","0px");
-							$("#modelMsg").html("<b class='boldTextRed'>Please attempt all the questions.</b>");
+							$("#modelMsg").html("<b class='boldTextRed'>Please attempt all the questions</b>");
 							break;
 						}
 						arr.push({
@@ -115,7 +115,7 @@
 						 data.corrAns = dataQues;
 						 
 						 
-						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully .<br> Number of Correct Answers  : " + ansCount+"</b>");
+						 $("#modelMsg").html("<b class='boldTextGreen'>Test submitted successfully .<br> Number of correct answers  : " + ansCount+"</b>");
                          $('#nextLevelConfig').prop('hidden',false);
 						 
 						    $('#testSubmit').prop('hidden',true); 

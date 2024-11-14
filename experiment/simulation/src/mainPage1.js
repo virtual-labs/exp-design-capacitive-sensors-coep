@@ -76,11 +76,11 @@ function mainPage1(){
 	   
        +'<div class="row">'
 	   +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Select Thickness (mm) : </label>'
+	   +'<label class="labelstyle"> Select Distance (mm) : </label>'
 	   +'</div>'
 	   +'<div class="col-sm-6">'
 	   +'<select  class="form-control selectConf" id="distance" " style="height:auto;">'
-	   +'<option value="0">--- Select Thickness --- </option>'
+	   +'<option value="0">--- Select Distance --- </option>'
 	   +'<option value="1" >1</option>'
 	   +'<option value="2">2</option>'
 	   +'<option value="3">3</option>'
@@ -166,7 +166,7 @@ function mainPage1(){
 					{
 					if (id <= 3) {
 						if (flowAns == calculateTime) {
-							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b> ");
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct answer</b> ");
 							$("#timeAnswer").prop('hidden',true);
 							$("#selectCheck").prop('hidden',false);
 							$("#distance").prop('disabled',false);
@@ -185,7 +185,7 @@ function mainPage1(){
 
 					} else if (id == 4)
 					 {
-						$("#modelMsg123").html("<b class='boldTextBlue'>Formula : Capacitance  = " + unescape('%u2208') + " X Area / Distance</b> ");
+						$("#modelMsg123").html("<b class='boldTextBlue'>Formula :<br/> Capacitance  = " + unescape('%u2208') + " X Area / Distance</b> ");
 
 						
 					} else {
@@ -193,7 +193,7 @@ function mainPage1(){
 //						flow = flowAns.toFixed(2);
 						if (flowAns == calculateTime) {
 							
-							$("#modelMsg123").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg123").html("<b class='boldTextGreen'>Correct answer</b>");
 							$("#timeAnswer").prop('hidden',true);
 //							$("#timeAnswer").prop('hidden',false);
 							$("#selectCheck").prop('hidden',false);
@@ -206,7 +206,7 @@ function mainPage1(){
 					
 						} else {
 
-							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct Answer is  " +calculateTime+'</b>');
+							 $("#modelMsg123").html("<b class='boldTextBlue'>Correct answer is  " +calculateTime+'</b>');
 						}
 					}
 					id++;
@@ -237,7 +237,7 @@ function mainPage1(){
 		$("#modelMsg123").html("<b class='boldTextRed'>Select Fluid Type </b>");
 	}else{
 		$("#errorPanel").prop("hidden",true);
-		$("#modelMsg123").html("<b class='boldTextGreen'>Configured Successfully</b>");		
+		$("#modelMsg123").html("<b class='boldTextGreen'>Configured successfully</b>");		
 		$("#material").prop('disabled',true);
 		$("#fluidType").prop('disabled',true);
 		$("#distance").prop('disabled',true);	

@@ -1,13 +1,14 @@
-## Theory:
+## Theory
 
-The capacitive transducer is used for measuring the displacement, pressure and other physical quantities. It is a passive transducer that means it requires external power for operation. The capacitive transducer works on the principle of variable capacitances. The capacitance of the capacitive transducer changes because of many reasons like overlapping of plates, change in distance between the plates and dielectric constant.
+The capacitive transducer is used for measuring the displacement, pressure and other physical quantities. It is a passive transducer which means it requires external power for operation. The capacitive transducer works on the principle of variable capacitances. The capacitance of the capacitive transducer changes because of many reasons like overlapping plates, changes in distance between the plates and dielectric constants.
  
-The capacitive transducer contains two parallel metal plates. These plates are separated by the dielectric medium which is either air, material, gas or liquid. In the normal capacitor the distance between the plates are fixed, but in capacitive transducer the distance between them are varied.
+The capacitive transducer contains two parallel metal plates. These plates are separated by the dielectric medium which is either air, material, gas or liquid. In a normal capacitor, the distance between the plates is fixed, but in a capacitive transducer, the distance between them is varied.
 
 The capacitive transducer uses the electrical quantity of capacitance for converting the mechanical movement into an electrical signal. The input quantity causes the change of the capacitance which is directly measured by the capacitive transducer.
 
-The capacitors measure both the static and dynamic changes. The displacement is also measured directly by connecting the measurable devices to the movable plate of the capacitor. It works on with both the contacting and non-contacting modes.
-#### Principle of Operation : 
+The capacitors measure both the static and dynamic changes. The displacement is also measured directly by connecting the measurable devices to the movable plate of the capacitor. It works with both the contacting and non-contacting modes.
+
+#### Principle of Operation  
 The equations below express the capacitance between the plates of a capacitor
 
 ![1](images/figure1.jpg) -----(1)
@@ -22,22 +23,24 @@ The schematic diagram of a parallel plate capacitive transducer is shown in the 
 
 ![2](images/figure2.jpg)
  
-The change in capacitance occurs because of the physicals variables like displacement, force, pressure, etc. The capacitance of the transducer also changes by the variation in their dielectric constant which is usually because of the measurement of liquid or gas level.
+The change in capacitance occurs because of the physical variables like displacement, force, pressure, etc. The capacitance of the transducer also changes by the variation in their dielectric constant, which is usually because of the measurement of liquid or gas level.
+
 The capacitance of the transducer is measured with the bridge circuit. The output impedance of transducer is given as
 
 ![3](images/figure3.jpg) -----(2)
 
 Where, <br> C – capacitance<br>
 f – frequency of excitation in Hz.<br>
+
 The capacitive transducer is mainly used for measurement of linear displacement. The capacitive transducer uses the following three effects.
-1.	Variation in capacitance of transducer is because of the overlapping of capacitor plates.
+1.	Variation in capacitance of the transducer is because of the overlapping of capacitor plates.
 2.	The change in capacitance is because of the change in distances between the plates.
 3.	The capacitance changes because of dielectric constant.
 The following methods are used for the measuring displacement.
 
 ### 1.The transducer using the change in distance between the plates 
 
- The capacitance of the transducer is inversely proportional to the distance between the plates. The one plate of the transducer is fixed, and the other is movable. The displacement which is to be measured links to the movable plates.
+ The capacitance of the transducer is inversely proportional to the distance between the plates. The one plate of the transducer is fixed, and the other is movable. The displacement that is to be measured links to the movable plates.
  
  ![4](images/figure4(1).png)
 
@@ -46,20 +49,21 @@ The capacitance is inversely proportional to the distance because of which the c
 
 ![5](images/figure5.jpg)
 
-The sensitivity of the transducer is not constant and vary from places to places
+The sensitivity of the transducer is not constant and varies from place to place.
 
-### 2. A transducer using the change in the Area of Plates 
+### 2. A transducer using the change in the area of plates 
 The equation below shows that the capacitance is directly proportional to the area of the plates. The capacitance changes correspondingly with the change in the position of the plates.
 
 ![6](images/figure6(1).jpg)
 
-The capacitive transducers are used for measuring the large displacement approximately from 1mm to several cms. The area of the capacitive transducer changes linearly with the capacitance and the displacement. Initially, the nonlinearity occurs in the system because of the edges. Otherwise, it gives the linear response.
+The capacitive transducers are used for measuring the large displacement approximately from 1 mm to several cm. The area of the capacitive transducer changes linearly with the capacitance and the displacement. Initially, the nonlinearity occurs in the system because of the edges. Otherwise, it gives the linear response.
 The capacitance of the parallel plates is given as 
 
 ![7](images/figure7.jpg) ------(3)
  
-where,<br> x – the length of overlapping part of plates<br>
-ω – the width of overlapping part of plates.<br>
+where,<br> x – the length of overlapping parts of plates<br>
+ω – the width of overlapping parts of plates.<br>
+
 The sensitivity of the displacement is constant, and therefore it gives the linear relation between the capacitance and displacement.
  
  ![8](images/figure8.jpg) -----(4)
@@ -85,7 +89,8 @@ The capacitance at angle θ is given expressed as,
 ![13](images/figure13.jpg) ------(7)
  
 The 180° is the maximum value of the angular displacement of the capacitor.
-#### Advantage of Capacitive Transducer
+
+#### Advantage of capacitive transducer
 The following are the major advantages of capacitive transducers.
 
 1.	It requires an external force for operation and hence very useful for small systems.
@@ -98,23 +103,23 @@ The following are the major advantages of capacitive transducers.
 	
 5.	It requires small output power for operation.
 
-#### Disadvantages of capacitive Transducer
+#### Disadvantages of capacitive transducer
 The main disadvantages of the transducer are as follows.
 
 1.	The metallic parts of the transducers require insulation.
 
 2.	The frame of the capacitor requires earthing for reducing the effect of the stray magnetic field.
 
-3.	Sometimes the transducer shows the nonlinear behaviours because of the edge effect which is controlled by using the guard ring.
+3.	Sometimes the transducer shows the nonlinear behaviors because of the edge effect which is controlled by using the guard ring.
 
 4.	The cable connecting across the transducer causes an error.
 
 #### Uses of Capacitive Transducer
-The following are the uses of capacitive transducer.
+The following are the uses of capacitive transducers.
 
-1.	The capacitive transducer uses for measurement of both the linear and angular displacement. It is extremely sensitive and used for the measurement of very small distance.
+1.	The capacitive transducer is used for measurement of both the linear and angular displacement. It is extremely sensitive and used for the measurement of very small distances.
 
-2.	It is used for the measurement of the force and pressures. The force or pressure, which is to be measured is first converted into a displacement, and then the displacement changes the capacitances of the transducer.
+2.	It is used for the measurement of the force and pressure. The force or pressure, which is to be measured, is first converted into a displacement, and then the displacement changes the capacitances of the transducer.
 
 3.	It is used as a pressure transducer in some cases, where the dielectric constant of the transducer changes with the pressure.
 
