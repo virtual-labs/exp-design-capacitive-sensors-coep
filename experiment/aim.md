@@ -1,7 +1,7 @@
 
 ### Aim: 
 
-Design of Capacitive Sensor and its Application for Thickness Measurement.
+Design of capacitive sensor and its application for thickness measurement
 
 ### Objectives:
 
