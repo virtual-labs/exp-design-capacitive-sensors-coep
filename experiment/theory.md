@@ -38,6 +38,8 @@ The capacitive transducer is mainly used for measurement of linear displacement.
 3.	The capacitance changes because of dielectric constant.
 The following methods are used for the measuring displacement.
 
+
+
 ### 1.The transducer using the change in distance between the plates 
 
  The capacitance of the transducer is inversely proportional to the distance between the plates. The one plate of the transducer is fixed, and the other is movable. The displacement that is to be measured links to the movable plates.
@@ -126,3 +128,6 @@ The following are the uses of capacitive transducers.
 4.	The humidity in gases is measured through the capacitive transducer.
 
 5.	The transducer uses the mechanical modifier for measuring the volume, density, weight etc.
+
+### Dielectric constant of different material
+![14](images/Table.png)
