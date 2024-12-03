@@ -1,0 +1,64 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following quantities affects the capacitance in a capacitive sensor?",
+      "answers": {
+        "a": "Resistance",
+        "b": " Frequency",
+        "c": "Dielectric constant",
+        "d": "Voltage"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Capacitive sensors are most suitable for detecting objects with high",
+      "answers": {
+        "a": "Conductivity",
+        "b": " Magnetic properties",
+        "c": "Reflectivity",
+        "d": "Permittivity"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What type of energy do capacitive sensors primarily interact with?",
+      "answers": {
+        "a": "Electrical energy",
+        "b": "Magnetic energy",
+        "c": " Thermal energy",
+        "d": " Optical energy"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	
+	{
+      "question": "Which of the following components is crucial for a capacitive sensor?",
+      "answers": {
+        "a": "Inductor",
+        "b": "Resistor",
+        "c": " Capacitor",
+        "d": " Transformer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Capacitive sensors are commonly used for",
+      "answers": {
+        "a": "Thickness measurement",
+        "b": "Density measurement",
+        "c": "Pressure measurement",
+        "d": "Temperature control"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+	
+  ]
+}

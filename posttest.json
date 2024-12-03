@@ -1,0 +1,68 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following is a limitation of capacitive sensors?",
+      "answers": {
+        "a": "Insensitivity to environmental factors",
+        "b": "Sensitivity to temperature changes",
+        "c": "Only work with metallic objects",
+        "d": "High cost of manufacturing"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The ε in the capacitance formula stands for _______?",
+      "answers": {
+        "a": "Permittivity of area",
+        "b": "Permittivity of dielectric",
+        "c": "Permittivity of distance",
+        "d": "Permittivity of outcome"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Which feature of capacitive sensors allows them to detect transparent objects?",
+      "answers": {
+        "a": "Light-reflective surface",
+        "b": "Dielectric property of the material",
+        "c": "Infrared emission",
+        "d": "High-frequency oscillation"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Which material would cause a greater capacitance change in a capacitive sensor?",
+      "answers": {
+        "a": "Mica",
+        "b": "Air",
+        "c": "Teflon",
+        "d": "Glass"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Capacitive sensors can be used to detect objects through which type of material?",
+      "answers": {
+        "a": "Metal",
+        "b": " Non-conductive materials",
+        "c": "Magnetic materials",
+        "d": "High-reflectivity materials"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
